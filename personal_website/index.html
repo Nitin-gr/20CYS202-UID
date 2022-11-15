@@ -1,81 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
-<style>
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 200px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 330px;
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Profile - Nitin Gurusamy</title>
-<link rel="icon" href="download.png">
- <div class="topnav">
-  <a class="active" href="#Nitin_Gurusamy">Nitin Gurusamy</a>
-  <a href="#My_Education">My Education</a>
-  <a href="#My_Soft_Skills">My Soft Skills</a>
-</div> 
-<h1 class="hr-lines" style="text-align: center; font-family: Lucida Calligraphy; padding-top: 50px;">About Me</h1>
-<img src="C:\Users\nitin\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2022-10-20(E).jpg">
+
+<style>
+.nav {
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.nav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 15px 190px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+html {
+	scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+    background-image: linear-gradient(black, white);
+	position: relative;
+    font-family: sans-serif;
+}
+
+section {
+    display:block;
+    height: 100vh;
+    width: 100vw;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+	color: white;
+}
+
+h3 {
+	font-size: 35px;
+    margin-bottom: 20px;
+	color: black;
+}
+      
+a {
+    color: #404040 ;
+    text-align: center;
+	text-decoration:none;
+	font-size: 20px;
+}
+
+#ABOUT_ME, #MY_EDUCATION, #SOCIALS {
+    display: flex;
+    flex_direction: column;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#profile-link {
+    padding: 5px;
+}
+
+.logo1 {
+	height: 125px;
+	width: 125px;
+	padding-top: 25px;
+}
+
+.logo2 {
+	height: 100px;
+	width: 300px;
+	padding-top: 25px;
+}
+
+.about p {
+    font-size: 20px;
+	color: white;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.school, .schl{
+	display: inline-block;
+}
+
+.college, .clg {
+	display: inline-block;
+}
+
+.schl {
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+.clg {
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+
+</style>
+
 </head>
-<body style="background-color:#F0FFFF">
-<h2 id="Nitin_Gurusamy" style="font-family: Lucida Calibri;">Nitin Gurusamy</h2>
-<p>Hello, 
-I am <b>Nitin Gurusamy</b>, a student who’s studying in <b>Amrita Vishwa Vidayapeetham</b>. 
-Currently, I'm pursuing <b>B. Tech. in Computer Science and Engineering (Cyber Security)</b>.
-Something that gives me comfort and helps me relax is <i>cooking</i>.
-At first, it was a little stressful, but then I started learning more and more. 
-Another thing that helps me relax is <i>listening to musics</i>. 
-I love doing adventurous things.
-Now, I want to learn <u>scuba diving</u> and <u>sky diving</u>.  
-</p>
-Countries that I would like to visit:
-<ul>
-<li>France</li>
-<li>Switzerland</li>
-<li>Cuba</li>
-</ul>
-<br>
-Contact me:
-<br>
-<a href="https://www.instagram.com/_nitin_gr/">Instagram</a>
-<br>
-<a href="https://www.facebook.com/profile.php?id=100079317692076">Facebook</a> 
-<h2 id="My_Education" style="font-family: Lucida Calibri;">My Education</h2>
-<h2 id="My_Soft_Skills" style="font-family: Lucida Calibri;">My Soft Skills</h2>
+
+<body>
+<div class="nav">
+  <a class="active" href="#ABOUT_ME">ABOUT ME</a>
+  <a href="#MY_EDUCATION">MY EDUCATION</a>
+  <a href="#SOCIALS">CONTACT ME</a>
+</div>
+	
+	<section id="ABOUT_ME">
+		<div class="about">
+			<h2>Hi!! I am Nitin Gurusamy</h2>
+			<p class="about">A student pursuing B.Tech in Computer Science with specialization in Cybersecurity from <i>Amrita Vishwa Vidhyapeetham</i>. I have 
+			learnt versed in multiple programming languages and markup languages including C, C++, Python, Java, HTML5, CSS and bash scripting. 
+			I would like to explore more in pentesting, networking and blockchain domains. Something that gives me comfort and helps me relax is 
+			<i>cooking</i>.At first, it was a little stressful, but then I started learning more and more. Another thing that helps me relax is 
+			<i>listening to musics</i>.</p>
+		</div>
+	</section>
+	
+	<section id="MY_EDUCATION">
+		<div class="education">
+			<h3 style="margin-left: -50px;">My Education</h3>
+			<div class="school">
+			<img class="logo1" src="C:\B.Tech Csc-Cys\Semester - 3\User Interface Design - Lab\Assignment\personal_website\images\Suguna.jpeg">
+			</div>
+			<div class="schl" >
+			<p>Suguna PIP School</p>
+			<p><i>2006-2021</i></p>
+			</div>
+			<br>
+			<div class="college">
+			<img class="logo2" src="C:\B.Tech Csc-Cys\Semester - 3\User Interface Design - Lab\Assignment\personal_website\images\Amrita-logo.jpg">
+			</div>
+			<div class="clg">
+			<p>Amrita Vishwa Vidyapeetham</p>
+			<p><i>2021-present</i><p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="SOCIALS">
+      <div class="social">
+        <h3 style="margin-left: -55px;">Contact me at ...</h3>
+        <div class="links">
+			<a id="profile-link" href="https://www.linkedin.com/in/nitin-gurusamy-b48565229/" target="_blank">LinkedIn</a>
+            <a id="profile-link" href="https://github.com/nitin-gr" target="_blank">Github</a>
+            <a id="profile-link" href="https://discord.com/channels/991775842478854254/991950187721400382" target="_blank">Discord</a>
+			<a id="profile-link" href="https://www.instagram.com/_nitin_gr/" target="_blank">Instagram</a>
+            <a id="profile-link" href="https://www.facebook.com/profile.php?id=100079317692076" target="_blank">Facebook</a>
+			<a id="profile-link" href="mailto:nitingr.03@gmail.com">E-Mail</a>
+        </div> 
+      </div>
+    </section>
+
 </body>
 </html>
-
-<!--Credits: https://unclebigbay.com/how-to-add-horizontal-lines-before-and-after-a-text-in-html-->
-<!--https://www.w3schools.com/howto/howto_js_topnav.asp-->
